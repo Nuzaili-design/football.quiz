@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+          crossorigin="anonymous">
+    <title>Football History Quiz</title>
+    <style>
+        body {
+            background-color: rgb(54, 54, 56);
+            color: white;
+        }
+        .quiz-container {
+            background: rgb(238, 235, 235);
+            color: black;
+            padding: 30px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            margin-top: 20px;
+        }
+        .alert {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container quiz-container">
+        <h2 class="text-center">Football History Quiz</h2>
+        <form id="quizForm">
+            <div class="question">
+                <label for="question1">1. Who won the FIFA World Cup in 2018?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" value="France" id="q1a">
+                    <label class="form-check-label" for="q1a">France</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" value="Croatia" id="q1b">
+                    <label class="form-check-label" for="q1b">Croatia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question1" value="Brazil" id="q1c">
+                    <label class="form-check-label" for="q1c">Brazil</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question1">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question2">2. Which country has won the most World Cups?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" value="Brazil" id="q2a">
+                    <label class="form-check-label" for="q2a">Brazil</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" value="Germany" id="q2b">
+                    <label class="form-check-label" for="q2b">Germany</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" value="Italy" id="q2c">
+                    <label class="form-check-label" for="q2c">Italy</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question2">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question3">3. Who is the top scorer in the history of the FIFA World Cup?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" value="Miroslav Klose" id="q3a">
+                    <label class="form-check-label" for="q3a">Miroslav Klose</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" value="Ronaldo" id="q3b">
+                    <label class="form-check-label" for="q3b">Ronaldo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question3" value="Pele" id="q3c">
+                    <label class="form-check-label" for="q3c">Pele</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question3">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question4">4. Which country hosted the 2014 FIFA World Cup?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" value="Brazil" id="q4a">
+                    <label class="form-check-label" for="q4a">Brazil</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" value="Germany" id="q4b">
+                    <label class="form-check-label" for="q4b">Germany</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question4" value="Russia" id="q4c">
+                    <label class="form-check-label" for="q4c">Russia</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question4">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question5">5. Who won the Ballon d'Or in 2021?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" value="Lionel Messi" id="q5a">
+                    <label class="form-check-label" for="q5a">Lionel Messi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" value="Robert Lewandowski" id="q5b">
+                    <label class="form-check-label" for="q5b">Robert Lewandowski</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question5" value="Cristiano Ronaldo" id="q5c">
+                    <label class="form-check-label" for="q5c">Cristiano Ronaldo</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question5">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question6">6. Which club has won the most UEFA Champions League titles?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" value="Real Madrid" id="q6a">
+                    <label class="form-check-label" for="q6a">Real Madrid</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" value="AC Milan" id="q6b">
+                    <label class="form-check-label" for="q6b">AC Milan</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question6" value="Liverpool" id="q6c">
+                    <label class="form-check-label" for="q6c">Liverpool</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question6">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question7">7. Which player holds the record for the most goals in a single calendar year?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" value="Lionel Messi" id="q7a">
+                    <label class="form-check-label" for="q7a">Lionel Messi</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" value="Cristiano Ronaldo" id="q7b">
+                    <label class="form-check-label" for="q7b">Cristiano Ronaldo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question7" value="Pele" id="q7c">
+                    <label class="form-check-label" for="q7c">Pele</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question7">You must choose an answer.</div>
+            </div>
+
+            <div class="question">
+                <label for="question8">8. Which country won the first ever FIFA World Cup in 1930?</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" value="Uruguay" id="q8a">
+                    <label class="form-check-label" for="q8a">Uruguay</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" value="Argentina" id="q8b">
+                    <label class="form-check-label" for="q8b">Argentina</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question8" value="Brazil" id="q8c">
+                    <label class="form-check-label" for="q8c">Brazil</label>
+                </div>
+                <div class="alert alert-danger" id="alert-question8">You must choose an answer.</div>
+            </div>
+
+            <button type="button" class="btn btn-dark btn-submit" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            // Initialize a variable to track whether the form is valid
+            let isValid = true;
+
+            // Get all the form data
+            const formData = new FormData(document.getElementById('quizForm'));
+
+           
+            const questions = [
+                'question1', 'question2', 'question3', 
+                'question4', 'question5', 'question6', 
+                'question7', 'question8'
+            ];
+
+            // Validate each question
+            questions.forEach(question => {
+                
+                if (!formData.get(question)) {
+                    // If not, show the alert for this question
+                    document.getElementById(`alert-${question}`).style.display = 'block';
+                    isValid = false;
+                } else {
+                    // Hide the alert if a selection is made
+                    document.getElementById(`alert-${question}`).style.display = 'none';
+                }
+            });
+
+            // If the form is valid, store the data and proceed
+            if (isValid) {
+                let answers = {};
+                for (let [key, value] of formData.entries()) {
+                    answers[key] = value;
+                }
+
+                // Store data in local storage
+                localStorage.setItem('quizAnswers', JSON.stringify(answers));
+
+                
+                window.location.href = 'results.html';
+            } else {
+                alert('Please answer all questions before submitting.');
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
