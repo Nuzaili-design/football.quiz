@@ -31,145 +31,151 @@
         .alert {
             display: none;
         }
+        #timer {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container quiz-container">
         <h2 class="text-center">Football History Quiz</h2>
+        <div id="timer" class="text-center">Time Remaining: 05:00</div> <!-- Timer Display -->
         <form id="quizForm">
+            <!-- Quiz Questions -->
             <div class="question">
-                <label for="question1">1. Which player scored the fastest hat-trick in the Premier League?</label><br>
+                <label for="question1">1. Prior to the 2026 World Cup, which goalkeeper holds the record for the most saves in a single World Cup match?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question1" value="Ronald" id="q1a">
-                    <label class="form-check-label" for="q1a">Ronaldo</label>
+                    <input class="form-check-input" type="radio" name="question1" value="Manuel Neuer" id="q1a">
+                    <label class="form-check-label" for="q1a">Manuel Neuer</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question1" value="Sadio Mane" id="q1b">
-                    <label class="form-check-label" for="q1b">Sadio Mane</label>
+                    <input class="form-check-input" type="radio" name="question1" value="Gianluigi Buffon" id="q1b">
+                    <label class="form-check-label" for="q1b">Gianluigi Buffon</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question1" value="Salah" id="q1c">
-                    <label class="form-check-label" for="q1c">Salah</label>
+                    <input class="form-check-input" type="radio" name="question1" value="Tim Howard" id="q1c">
+                    <label class="form-check-label" for="q1c">Tim Howard</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question1">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question2">2. Which team won the first Premier League title?</label><br>
+                <label for="question2">2. Which country has qualified for the World Cup 8 times, but has never advanced past the group stages?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question2" value="Liverpool" id="q2a">
-                    <label class="form-check-label" for="q2a">Liverpool</label>
+                    <input class="form-check-input" type="radio" name="question2" value="Turkey" id="q2a">
+                    <label class="form-check-label" for="q2a">Turkey</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question2" value="Southampton" id="q2b">
-                    <label class="form-check-label" for="q2b">Southampton</label>
+                    <input class="form-check-input" type="radio" name="question2" value="Ireland" id="q2b">
+                    <label class="form-check-label" for="q2b">Ireland</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question2" value="Manchester United" id="q2c">
-                    <label class="form-check-label" for="q2c">Manchester United</label>
+                    <input class="form-check-input" type="radio" name="question2" value="Scotland" id="q2c">
+                    <label class="form-check-label" for="q2c">Scotland</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question2">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question3">3. With 202 clean sheets, which goalkeeper has the best record in the Premier League?</label><br>
+                <label for="question3">3. In which year was the first FIFA Women's World Cup held?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question3" value="Petr Cech" id="q3a">
-                    <label class="form-check-label" for="q3a">Petr Cech</label>
+                    <input class="form-check-input" type="radio" name="question3" value="1991" id="q3a">
+                    <label class="form-check-label" for="q3a">1991</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question3" value="Van der sar" id="q3b">
-                    <label class="form-check-label" for="q3b">Van der sar</label>
+                    <input class="form-check-input" type="radio" name="question3" value="1996" id="q3b">
+                    <label class="form-check-label" for="q3b">1996</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question3" value="Ederson" id="q3c">
-                    <label class="form-check-label" for="q3c">Ederson</label>
+                    <input class="form-check-input" type="radio" name="question3" value="2000" id="q3c">
+                    <label class="form-check-label" for="q3c">2000</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question3">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question4">4. Which country has appeared in three World Cup finals, but never won the competition?</label><br>
+                <label for="question4">4. In the 2022 World Cup, what is "Al Rihla"?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question4" value="Netherlands" id="q4a">
-                    <label class="form-check-label" for="q4a">Netherlands</label>
+                    <input class="form-check-input" type="radio" name="question4" value="The Mascot" id="q4a">
+                    <label class="form-check-label" for="q4a">The Mascot</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question4" value="England" id="q4b">
-                    <label class="form-check-label" for="q4b">England</label>
+                    <input class="form-check-input" type="radio" name="question4" value="The Football" id="q4b">
+                    <label class="form-check-label" for="q4b">The Football</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question4" value="Portugal" id="q4c">
-                    <label class="form-check-label" for="q4c">Portugal</label>
+                    <input class="form-check-input" type="radio" name="question4" value="Qatar team Bus" id="q4c">
+                    <label class="form-check-label" for="q4c">Qatar team Bus</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question4">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question5">5. In which World Cup did Diego Maradona score his infamous 'Hand of God' goal?</label><br>
+                <label for="question5">5. What is the name of the Qatar 2022 World Cup Mascot?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question5" value="Mexico 1986" id="q5a">
-                    <label class="form-check-label" for="q5a">Mexico 1986</label>
+                    <input class="form-check-input" type="radio" name="question5" value="La'eeb" id="q5a">
+                    <label class="form-check-label" for="q5a">La'eeb</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question5" value="Spain 1982" id="q5b">
-                    <label class="form-check-label" for="q5b">Spain 1982</label>
+                    <input class="form-check-input" type="radio" name="question5" value="Sa'eed" id="q5b">
+                    <label class="form-check-label" for="q5b">Sa'eed</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question5" value="Argentina 1978" id="q5c">
-                    <label class="form-check-label" for="q5c">Argentina 1978</label>
+                    <input class="form-check-input" type="radio" name="question5" value="Lusail" id="q5c">
+                    <label class="form-check-label" for="q5c">Lusail</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question5">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question6">6. Which team was the first from the UK to win the European Cup?</label><br>
+                <label for="question6">6. Which player has scored the most goals in a single FIFA World Cup tournament?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question6" value="Manchester United" id="q6a">
-                    <label class="form-check-label" for="q6a">Manchester United</label>
+                    <input class="form-check-input" type="radio" name="question6" value="Just Fontaine" id="q6a">
+                    <label class="form-check-label" for="q6a">Just Fontaine</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question6" value="Celtic" id="q6b">
-                    <label class="form-check-label" for="q6b">Celtic</label>
+                    <input class="form-check-input" type="radio" name="question6" value="Miroslav Klose" id="q6b">
+                    <label class="form-check-label" for="q6b">Miroslav Klose</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question6" value="Liverpool" id="q6c">
-                    <label class="form-check-label" for="q6c">Liverpool</label>
+                    <input class="form-check-input" type="radio" name="question6" value="Christiano Ronaldo" id="q6c">
+                    <label class="form-check-label" for="q6c">Christiano Ronaldo</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question6">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question7">7. In which year did the European Championship expand from 16 teams to 24 teams?</label><br>
+                <label for="question7">7. In which year did the Republic of Ireland national team make their first appearance in the FIFA World Cup?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question7" value="Euro 2016" id="q7a">
-                    <label class="form-check-label" for="q7a">Euro 2016</label>
+                    <input class="form-check-input" type="radio" name="question7" value="1986" id="q7a">
+                    <label class="form-check-label" for="q7a">1986</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question7" value="Euro 2020" id="q7b">
-                    <label class="form-check-label" for="q7b">Euro 2020</label>
+                    <input class="form-check-input" type="radio" name="question7" value="1990" id="q7b">
+                    <label class="form-check-label" for="q7b">1990</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question7" value="Euro 2024" id="q7c">
-                    <label class="form-check-label" for="q7c">Euro 2024</label>
+                    <input class="form-check-input" type="radio" name="question7" value="1994" id="q7c">
+                    <label class="form-check-label" for="q7c">1994</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question7">You must choose an answer.</div>
             </div>
 
             <div class="question">
-                <label for="question8">8. he fastest goal scored in Premier League history came in 7.69 seconds. Who scored it?</label><br>
+                <label for="question8">8. In which year was the Video Assistant Referee (VAR) system first introduced in official competitions?</label><br>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question8" value="Shane Long" id="q8a">
-                    <label class="form-check-label" for="q8a">Shane Long</label>
+                    <input class="form-check-input" type="radio" name="question8" value="2016" id="q8a">
+                    <label class="form-check-label" for="q8a">2016</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question8" value="Drogba" id="q8b">
-                    <label class="form-check-label" for="q8b">Drogba</label>
+                    <input class="form-check-input" type="radio" name="question8" value="2017" id="q8b">
+                    <label class="form-check-label" for="q8b">2017</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="question8" value="Owen" id="q8c">
-                    <label class="form-check-label" for="q8c">Owen</label>
+                    <input class="form-check-input" type="radio" name="question8" value="2018" id="q8c">
+                    <label class="form-check-label" for="q8c">2018</label>
                 </div>
                 <div class="alert alert-danger" id="alert-question8">You must choose an answer.</div>
             </div>
@@ -179,6 +185,28 @@
     </div>
 
     <script>
+        // Timer function
+        let timeRemaining = 300; // 5 minutes in seconds
+
+        const timerElement = document.getElementById('timer');
+        const countdown = setInterval(() => {
+            let minutes = Math.floor(timeRemaining / 60);
+            let seconds = timeRemaining % 60;
+
+            // Add a leading zero to seconds if needed
+            if (seconds < 10) seconds = "0" + seconds;
+            timerElement.textContent = `Time Remaining: ${minutes}:${seconds}`;
+
+            timeRemaining--;
+
+            // If time is over
+            if (timeRemaining < 0) {
+                clearInterval(countdown);
+                alert('Time is over!');
+                window.location.href = 'timeout.html'; // Redirect to a timeout page or handle appropriately
+            }
+        }, 1000);
+
         function submitQuiz() {
             // Initialize a variable to track whether the form is valid
             let isValid = true;
@@ -186,7 +214,6 @@
             // Get all the form data
             const formData = new FormData(document.getElementById('quizForm'));
 
-           
             const questions = [
                 'question1', 'question2', 'question3', 
                 'question4', 'question5', 'question6', 
@@ -195,7 +222,6 @@
 
             // Validate each question
             questions.forEach(question => {
-                
                 if (!formData.get(question)) {
                     // If not, show the alert for this question
                     document.getElementById(`alert-${question}`).style.display = 'block';
@@ -216,7 +242,6 @@
                 // Store data in local storage
                 localStorage.setItem('quizAnswers', JSON.stringify(answers));
 
-                
                 window.location.href = 'results.html';
             } else {
                 alert('Please answer all questions before submitting.');
